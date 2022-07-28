@@ -1,175 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- tailwind CDN start -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      };
-    </script>
-    <!-- tailwind CDN end -->
-
-    <!-- title start -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Code Camp</title>
-    <!-- title end -->
+    <!-- bootstap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- fontawsome kit -->
+    <script
+      src="https://kit.fontawesome.com/ee2b71a62d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <!-- header start -->
     <header>
-        <!-- navbar start -->
-        <section class="mt-4 mx-14">
-      <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
-        <div
-          class="container flex flex-wrap justify-between items-center mx-auto"
-        >
-          <div>
-            <h1 class="flex text-3xl font-bold">Code Camp</h1>
-          </div>
-          <div class="flex md:order-2">
-            <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 ">
-  <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
-      Register
-  </span>
+      <!-- navbar start -->
+      <section>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container">
+            <a class="navbar-brand fs-1 fw-bold" href="#"
+              ><i class="fa-solid fa-code"></i> Code Camp</a
+            >
             <button
-              data-collapse-toggle="navbar-cta"
+              class="navbar-toggler"
               type="button"
-              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-              aria-controls="navbar-cta"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
               aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-6 h-6"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
+              <span class="navbar-toggler-icon"></span>
             </button>
-          </div>
-          <div
-            class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
-            id="navbar-cta"
-          >
-            <ul
-              class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pr-4 pl-3 text-lg text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
-                  aria-current="page"
-                  >Home</a
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <div class="container">
+                <ul
+                  class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center"
                 >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pr-4 pl-3 text-lg text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
-                  >Courses</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pr-4 pl-3 text-lg text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
-                  >Deals</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pr-4 pl-3 text-lg text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
-                  >Success</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pr-4 pl-3 text-lg text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pr-4 pl-3 text-lg text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
-                  >Register</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </section>
-        <!-- navbar end -->
-
-        <!-- Carousel start -->
-    <section class="mt-4 mx-14">
-        
-<div id="indicators-carousel" class="relative" data-carousel="static">
-    <!-- Carousel wrapper -->
-    <div class="overflow-hidden relative h-56 rounded-lg md:h-96">
-         <!-- Item 1 -->
-        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
-            <img src="./images/cover/cover-1.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-            <div class="grid h-screen place-items-center">
-                <div class="carousel-caption hidden md:block absolute text-center">
-        <h5 class="text-xl">get Started Digital learning</h5>
-        <p>Learn from anywhere around the globe</p>
-      </div>
+                  <li class="nav-item">
+                    <a class="nav-link active px-2" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link active">Courses</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link active">Deals</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link active">Success</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link active">About</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link active">Register</a>
+                  </li>
+                </ul>
+              </div>
+              <form class="d-flex" role="search">
+                <button class="btn btn-outline-primary px-4" type="submit">
+                  Register
+                </button>
+              </form>
             </div>
-        </div>
-        <!-- Item 2 -->
-        <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
-            <img src="./images/cover/cover-2.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform" data-carousel-item="">
-            <img src="./images/cover/cover-3.jpg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
-        </div>
-    </div>
-    <!-- Slider indicators -->
-    <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-        <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full bg-white/50" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full bg-white/50" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-    </div>
-    <!-- Slider controls -->
-    <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev="">
-        <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next="">
-        <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
-</div>
+          </div>
+        </nav>
+      </section>
+      <!-- navbar end -->
 
-    </section>
-        <!-- Carousel start -->
-
+      <!-- carousel start -->
+      <section class="container">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="false"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/cover/cover-1.png"
+                class="d-block w-100"
+                alt="..."      
+              />
+              <div
+                class="carousel-caption d-none d-md-block pb-"
+              >
+                <h1 class="display-1 fw-semibold">
+                  Get Startted Digital Learning
+                </h1>
+                <p>
+                  Learning is more efffective when it is active rather than a
+                  passive process
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/cover/cover-1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="display-1 fw-semibold">
+                  Get Startted Digital Learning
+                </h1>
+                <p>
+                  Learning is more efffective when it is active rather than a
+                  passive process
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/cover/cover-1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="display-1 fw-semibold">
+                  Get Startted Digital Learning
+                </h1>
+                <p>
+                  Learning is more efffective when it is active rather than a
+                  passive process
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- carousel end -->
     </header>
-    <!-- header end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
